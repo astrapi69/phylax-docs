@@ -22,8 +22,67 @@ Recommendations for a good master password:
 - Use it only for Phylax. Recycled passwords from other services are the most common real-world weakness.
 - Store it in a password manager or write it down somewhere safe.
 
-!!! warning "Phylax cannot reset your master password"
-    Phylax does not know your password. It is not stored anywhere, not on your device and not on any server. If you forget it, your encrypted data becomes inaccessible. There is a Reset function, but it wipes everything and starts from zero. This same property is what makes Phylax safe against cloud breaches; it also makes the master password the critical point.
+!!! warning "Master password: your data's Achilles heel"
+
+    Phylax does not know your master password. It is not stored
+    anywhere, not on your device and not on any server. This is the
+    reason your data is safe; it is also why there is no reset: there
+    is nobody who could recover the password.
+
+    If you forget your master password, every piece of data stored in
+    Phylax is irrevocably lost. Even encrypted backups cannot be
+    opened without the password.
+
+    **This is the single most important thing you have to get right
+    in Phylax.** Spend deliberate time on a strategy that fits you.
+
+### Recommended strategies
+
+Pick at least two of the following options, ideally three. A single backup is a backup that fails you when you actually need it.
+
+#### Password manager (digital, most convenient)
+
+A password manager stores your master password encrypted and syncs it across your devices. Options:
+
+- **Locally encrypted:** Bitwarden (free, open-source), KeePass (file-based, full control), 1Password (commercial, very polished)
+- **Browser-integrated:** Firefox Account, Chrome Passwords, Safari Keychain. Convenient but tied to your browser account.
+
+If you use Phylax for data sovereignty, a self-hosted Bitwarden server (Vaultwarden) or KeePass with your own cloud sync fits the same posture best.
+
+#### Private cloud / self-hosted solution
+
+If you run your own Nextcloud, Synology NAS or similar, store your master password there in an encrypted notes tool (for example Joplin with end-to-end encryption, Standard Notes, or encrypted Markdown files). Advantage: your existing backup strategy for that cloud automatically protects the Phylax password too.
+
+#### Physical note
+
+Write the master password down and keep it in a safe place, not on the device itself, not in the wallet you carry every day. Examples: a safe, a lockable drawer, deposited with a trusted person, a safe deposit box. Multiple copies in different locations reduce the risk of total loss.
+
+#### Emergency recovery plan
+
+Decide who should get access to your master password in case of illness, death or accident. Write the instruction down together with your will, or leave it with an estate lawyer.
+
+### What backups do NOT solve
+
+Encrypted backups protect against:
+
+- Device loss (broken laptop, lost phone)
+- Accidental deletion
+- File corruption
+
+Encrypted backups do NOT protect against:
+
+- A forgotten master password; the backup is encrypted with the same password
+- Losing all your backup strategies at the same time
+
+### A practical recommendation
+
+Most Phylax users do well with this combination:
+
+1. Master password stored in a password manager (for example Bitwarden with your own cloud sync)
+2. A physical backup note in a safe place
+3. Regular encrypted Phylax backups on a second device or in your private cloud (see [Backup creation and restoration](../backup/create-and-restore.md))
+
+Together these three cover the most common scenarios: device loss, forgotten password, sync issues.
 
 ## 3. Create your profile
 
