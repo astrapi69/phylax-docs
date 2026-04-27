@@ -1,5 +1,7 @@
 # ePA-Import (elektronische Patientenakte)
 
+> **Hinweis zum geographischen Bezug:** Die ePA (elektronische Patientenakte) ist Deutschlands elektronisches Patientenakten-System. Diese Seite ist nur relevant, wenn du das deutsche Gesundheitssystem nutzt.
+
 !!! info "Platzhalter (Iteration 1)"
     Diese Seite ist Teil des Stage-1-Geruests. Vollstaendiger Inhalt folgt in einer spaeteren Iteration.
 

@@ -1,5 +1,7 @@
 # Importing findings from German EHR (ePA)
 
+> **About ePA:** This page describes Germany's electronic patient record system (elektronische Patientenakte, abbreviated ePA). The feature is relevant if you live in Germany or use German healthcare services. Users outside Germany can skip this page; Phylax works without ePA integration.
+
 !!! info "Placeholder (Iteration 1)"
     This page is part of the Stage 1 scaffolding. Full content will follow in a later iteration.
 
