@@ -1,0 +1,75 @@
+languages:
+  - code: de
+    name: Deutsch
+    default: true
+  - code: en
+    name: English
+
+navigation:
+  - title:
+      de: Erste Schritte
+      en: Getting Started
+    slug: getting-started
+    icon: rocket
+    children:
+      - title:
+          de: Was ist Phylax
+          en: What is Phylax
+        slug: getting-started/what-is-phylax
+      - title:
+          de: Erste Schritte
+          en: First Steps
+        slug: getting-started/first-steps
+
+  - title:
+      de: Tägliche Nutzung
+      en: Daily Use
+    slug: daily-use
+    icon: book-open
+    children:
+      - title:
+          de: Beobachtungen
+          en: Observations
+        slug: daily-use/observations
+      - title:
+          de: Laborwerte
+          en: Lab Values
+        slug: daily-use/lab-values
+      - title:
+          de: Supplemente
+          en: Supplements
+        slug: daily-use/supplements
+      - title:
+          de: Offene Punkte
+          en: Open Points
+        slug: daily-use/open-points
+      - title:
+          de: Basisdaten
+          en: Profile Base Data
+        slug: daily-use/profile-base-data
+
+  - title:
+      de: Sicherung
+      en: Backup
+    slug: backup
+    icon: shield
+    children:
+      - title:
+          de: Erstellen und Wiederherstellen
+          en: Create and Restore
+        slug: backup/create-and-restore
+
+  - title:
+      de: Hintergrund
+      en: Background
+    slug: background
+
+  - title:
+      de: FAQ
+      en: FAQ
+    slug: faq
+
+  - title:
+      de: Glossar
+      en: Glossary
+    slug: glossary

@@ -1,0 +1,101 @@
+site_name: Phylax Docs
+site_description: User documentation for Phylax, your local-first, zero-knowledge living health profile
+site_url: https://astrapi69.github.io/phylax-docs/
+repo_url: https://github.com/astrapi69/phylax-docs
+repo_name: astrapi69/phylax-docs
+docs_dir: docs/help
+
+exclude_docs: |
+  _meta.yaml
+
+theme:
+  name: material
+  language: de
+  palette:
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    primary: indigo
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    primary: indigo
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+  features:
+  - navigation.tabs
+  - navigation.sections
+  - navigation.expand
+  - navigation.top
+  - search.suggest
+  - search.highlight
+  - content.code.copy
+  - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+plugins:
+- search
+- i18n:
+    docs_structure: folder
+    languages:
+    - locale: de
+      name: Deutsch
+      default: true
+      build: true
+    - locale: en
+      name: English
+      build: true
+      nav_translations:
+        Erste Schritte: First Steps
+        Was ist Phylax: What is Phylax
+        Tägliche Nutzung: Daily Use
+        Beobachtungen: Observations
+        Laborwerte: Lab Values
+        Supplemente: Supplements
+        Offene Punkte: Open Points
+        Basisdaten: Profile Base Data
+        Sicherung: Backup
+        Erstellen und Wiederherstellen: Create and Restore
+        Hintergrund: Background
+        Glossar: Glossary
+        Home: Home
+- git-revision-date-localized:
+    enable_creation_date: true
+markdown_extensions:
+- admonition
+- pymdownx.details
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.highlight
+- pymdownx.inlinehilite
+- pymdownx.tasklist:
+    custom_checkbox: true
+- toc:
+    permalink: true
+extra:
+  social:
+  - icon: fontawesome/brands/github
+    link: https://github.com/astrapi69/phylax
+    name: Phylax app repository
+  - icon: fontawesome/brands/github
+    link: https://github.com/astrapi69/phylax-docs
+    name: Phylax docs repository
+nav:
+- Home: de/index.md
+- Erste Schritte:
+  - Was ist Phylax: de/getting-started/what-is-phylax.md
+  - Erste Schritte: de/getting-started/first-steps.md
+- Tägliche Nutzung:
+  - Beobachtungen: de/daily-use/observations.md
+  - Laborwerte: de/daily-use/lab-values.md
+  - Supplemente: de/daily-use/supplements.md
+  - Offene Punkte: de/daily-use/open-points.md
+  - Basisdaten: de/daily-use/profile-base-data.md
+- Sicherung:
+  - Erstellen und Wiederherstellen: de/backup/create-and-restore.md
+- Hintergrund: de/background.md
+- FAQ: de/faq.md
+- Glossar: de/glossary.md
