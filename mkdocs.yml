@@ -1,13 +1,13 @@
 site_name: Phylax Docs
-site_description: User documentation for Phylax, your local-first, zero-knowledge living health profile
+site_description: User documentation for Phylax, your local-first, zero-knowledge
+  living health profile
 site_url: https://astrapi69.github.io/phylax-docs/
 repo_url: https://github.com/astrapi69/phylax-docs
 repo_name: astrapi69/phylax-docs
 docs_dir: docs/help
+exclude_docs: '_meta.yaml
 
-exclude_docs: |
-  _meta.yaml
-
+  '
 theme:
   name: material
   language: de
@@ -56,8 +56,12 @@ plugins:
         Supplemente: Supplements
         Offene Punkte: Open Points
         Basisdaten: Profile Base Data
-        Sicherung: Backup
-        Erstellen und Wiederherstellen: Create and Restore
+        Daten: Data
+        Profil importieren (Markdown): Importing a profile (Markdown)
+        ePA-Import (elektronische Patientenakte): Importing findings from German EHR
+          (ePA)
+        Daten exportieren: Exporting data
+        Sicherung erstellen und wiederherstellen: Backup creation and restoration
         Hintergrund: Background
         Glossar: Glossary
         Home: Home
@@ -94,8 +98,11 @@ nav:
   - Supplemente: de/daily-use/supplements.md
   - Offene Punkte: de/daily-use/open-points.md
   - Basisdaten: de/daily-use/profile-base-data.md
-- Sicherung:
-  - Erstellen und Wiederherstellen: de/backup/create-and-restore.md
+- Daten:
+  - Profil importieren (Markdown): de/data/profile-import.md
+  - ePA-Import (elektronische Patientenakte): de/data/epa-import.md
+  - Daten exportieren: de/data/export.md
+  - Sicherung erstellen und wiederherstellen: de/backup/create-and-restore.md
 - Hintergrund: de/background.md
 - FAQ: de/faq.md
 - Glossar: de/glossary.md

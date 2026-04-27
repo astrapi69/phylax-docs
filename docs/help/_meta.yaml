@@ -49,14 +49,26 @@ navigation:
         slug: daily-use/profile-base-data
 
   - title:
-      de: Sicherung
-      en: Backup
-    slug: backup
-    icon: shield
+      de: Daten
+      en: Data
+    slug: data
+    icon: database
     children:
       - title:
-          de: Erstellen und Wiederherstellen
-          en: Create and Restore
+          de: Profil importieren (Markdown)
+          en: Importing a profile (Markdown)
+        slug: data/profile-import
+      - title:
+          de: ePA-Import (elektronische Patientenakte)
+          en: Importing findings from German EHR (ePA)
+        slug: data/epa-import
+      - title:
+          de: Daten exportieren
+          en: Exporting data
+        slug: data/export
+      - title:
+          de: Sicherung erstellen und wiederherstellen
+          en: Backup creation and restoration
         slug: backup/create-and-restore
 
   - title:
