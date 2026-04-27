@@ -106,9 +106,19 @@ Phylax stores your profile encrypted in your browser's local database (IndexedDB
 
 ## 5. Create your first observation
 
-An **observation** is the smallest unit in Phylax. Three types are available: fact, pattern, self-regulation. For the first one, a fact is enough: for example "this morning 7:30 AM, headache on the right side, woke up with pressure".
+An **observation** is the smallest unit in Phylax. It captures in a small, complete shape what you notice (fact), the context you place it in (pattern) and how you respond (self-regulation). These three fields are required; you also pick a **theme** for grouping and a **status**.
 
-Switch to the "Observations" view, create a new entry, choose type "Fact", write your text and save. With that, your profile is officially started.
+Example of a first entry:
+
+- **Theme:** Sleep
+- **Observation (fact):** This morning 7:30 AM, headache on the right side, woke up with pressure.
+- **Pattern:** Has shown up several times in the past two weeks, always after nights shorter than six hours.
+- **Self-regulation:** From today, sleep at least seven hours, re-evaluate in two weeks.
+- **Status:** under observation
+
+Switch to the "Observations" view, create a new entry, fill in the required fields and save. With that, your profile is officially started.
+
+For more on the fact-pattern-self-regulation idea and the optional fields, see the [Observations](../daily-use/observations.md) page.
 
 ## 6. Coming back later
 

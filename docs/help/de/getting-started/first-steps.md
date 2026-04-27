@@ -108,9 +108,19 @@ Phylax speichert dein Profil verschlüsselt in der lokalen Datenbank deines Brow
 
 ## 5. Erste Beobachtung anlegen
 
-Eine **Beobachtung** ist die kleinste Einheit in Phylax. Drei Typen stehen zur Verfügung: Fakt, Muster, Selbstregulation. Beim ersten Mal reicht ein Fakt: zum Beispiel "Heute morgens 7:30 Uhr Kopfschmerzen rechtsseitig, wach geworden mit Druck".
+Eine **Beobachtung** ist die kleinste Einheit in Phylax. Sie hält in einer kleinen, vollständigen Form fest, was du wahrnimmst (Fakt), in welchen Zusammenhang du es einordnest (Muster) und wie du darauf reagierst (Selbstregulation). Diese drei Felder sind Pflicht; zusätzlich vergibst du ein **Thema** zur Gruppierung und einen **Status**.
 
-Wechsle in den Bereich "Beobachtungen", lege einen neuen Eintrag an, wähle Typ "Fakt", schreibe deinen Text und speichere. Damit ist dein Profil offiziell gestartet.
+Beispiel für einen ersten Eintrag:
+
+- **Thema:** Schlaf
+- **Beobachtung (Fakt):** Heute morgens 7:30 Uhr Kopfschmerzen rechtsseitig, wach geworden mit Druck.
+- **Muster:** Tritt seit zwei Wochen mehrfach auf, immer nach kürzeren Nächten unter sechs Stunden.
+- **Selbstregulation:** Ab heute mindestens sieben Stunden Schlaf, in zwei Wochen erneut auswerten.
+- **Status:** in Beobachtung
+
+Wechsle in den Bereich "Beobachtungen", lege einen neuen Eintrag an, fülle die Pflichtfelder und speichere. Damit ist dein Profil offiziell gestartet.
+
+Mehr zur Idee hinter Fakt-Muster-Selbstregulation und zu den optionalen Feldern siehst du auf der Seite [Beobachtungen](../daily-use/observations.md).
 
 ## 6. Beim nächsten Mal
 
