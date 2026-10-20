@@ -23,10 +23,13 @@ See `docs/MAINTENANCE.md` in the [main Phylax repo](https://github.com/astrapi69
 - Poetry for Python dependency management
 - GitHub Actions deploy to GitHub Pages
 
-No analytics, no trackers, no request to a third-party host on page load - same constraints as the Phylax app itself. Two settings in `mkdocs.yml` keep it that way:
+No analytics, no trackers, no request to a third-party host on page load - same constraints as the Phylax app itself. Three things keep it that way:
 
-- `theme.font: false`: the system font stack. Without it, Material loads Roboto from Google Fonts in every visitor's browser.
-- No `repo_url` (and no `repo_name`): with it, Material's header widget fetches repository facts from `api.github.com` in every visitor's browser. The GitHub links live in `extra.social` instead, plain links with inline icons.
+- `theme.font: false` in `mkdocs.yml`: the system font stack. Without it, Material loads Roboto from Google Fonts in every visitor's browser.
+- No `repo_url` (and no `repo_name`) in `mkdocs.yml`: with it, Material's header widget fetches repository facts from `api.github.com` in every visitor's browser. The GitHub links live in `extra.social` instead, plain links with inline icons.
+- `overrides/main.html` (`theme.custom_dir: overrides`): a no-op `ResizeObserver` for browsers that have none (Safari before 13.1, Chrome before 64, Firefox before 69). Without it, Material loads a polyfill from `unpkg.com` in those browsers. With it, they keep the initial layout and miss only Material's live re-measuring of element sizes.
+
+A Mermaid diagram would break this: on a page with a `pre.mermaid` block, Material loads Mermaid from `unpkg.com` unless the page has loaded Mermaid itself. Self-host Mermaid before adding the first diagram.
 
 This note lives here and not as a comment in `mkdocs.yml`, because `scripts/generate_mkdocs_nav.py` rewrites that file and drops comments.
 
@@ -35,6 +38,8 @@ This note lives here and not as a comment in `mkdocs.yml`, because `scripts/gene
 ```
 phylax-docs/
 ├── mkdocs.yml                  # MkDocs config (nav block is generated)
+├── overrides/
+│   └── main.html               # theme override: ResizeObserver stand-in
 ├── docs/
 │   ├── pyproject.toml          # Poetry config for the docs build
 │   └── help/                   # docs_dir
