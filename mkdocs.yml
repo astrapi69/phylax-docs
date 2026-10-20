@@ -2,8 +2,6 @@ site_name: Phylax Docs
 site_description: User documentation for Phylax, your local-first, zero-knowledge
   living health profile
 site_url: https://astrapi69.github.io/phylax-docs/
-repo_url: https://github.com/astrapi69/phylax-docs
-repo_name: astrapi69/phylax-docs
 docs_dir: docs/help
 exclude_docs: '_meta.yaml
 
@@ -11,6 +9,7 @@ exclude_docs: '_meta.yaml
 theme:
   name: material
   language: de
+  font: false
   palette:
   - media: '(prefers-color-scheme: light)'
     scheme: default
@@ -33,8 +32,6 @@ theme:
   - search.highlight
   - content.code.copy
   - content.tabs.link
-  icon:
-    repo: fontawesome/brands/github
 plugins:
 - search
 - i18n:
