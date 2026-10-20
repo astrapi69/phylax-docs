@@ -23,7 +23,12 @@ See `docs/MAINTENANCE.md` in the [main Phylax repo](https://github.com/astrapi69
 - Poetry for Python dependency management
 - GitHub Actions deploy to GitHub Pages
 
-No analytics, no trackers, no third-party CDNs at runtime - same constraints as the Phylax app itself.
+No analytics, no trackers, no request to a third-party host on page load - same constraints as the Phylax app itself. Two settings in `mkdocs.yml` keep it that way:
+
+- `theme.font: false`: the system font stack. Without it, Material loads Roboto from Google Fonts in every visitor's browser.
+- No `repo_url` (and no `repo_name`): with it, Material's header widget fetches repository facts from `api.github.com` in every visitor's browser. The GitHub links live in `extra.social` instead, plain links with inline icons.
+
+This note lives here and not as a comment in `mkdocs.yml`, because `scripts/generate_mkdocs_nav.py` rewrites that file and drops comments.
 
 ## Layout
 
