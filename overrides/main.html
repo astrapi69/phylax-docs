@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{#-
+  Material's bundle loads a ResizeObserver polyfill from unpkg.com in
+  browsers without ResizeObserver (Safari before 13.1, Chrome before 64,
+  Firefox before 69). This no-op stand-in, defined before the bundle runs,
+  keeps that third-party request from happening (#1): those browsers keep
+  the initial layout and miss only the live re-measuring. ES5 syntax, so
+  they can parse it.
+-#}
+{% block libs %}
+  {{ super() }}
+  <script>
+    if (typeof ResizeObserver === "undefined") {
+      window.ResizeObserver = function () {};
+      window.ResizeObserver.prototype.observe = function () {};
+      window.ResizeObserver.prototype.unobserve = function () {};
+      window.ResizeObserver.prototype.disconnect = function () {};
+    }
+  </script>
+{% endblock %}
